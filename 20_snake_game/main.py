@@ -1,5 +1,4 @@
 import time
-import turtle
 
 from food import Food
 from snake import Snake
@@ -45,8 +44,5 @@ while game_is_on:
         if snake.head.distance(seg) < 10:
             game_is_on = False
             scoreboard.game_over()
-
-
-
 
 screen.exitonclick()
