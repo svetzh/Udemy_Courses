@@ -52,10 +52,12 @@ lbl4.config(padx=10, pady=10)
 # Radio Button
 unit_var = StringVar()
 unit_var.set("Km")
-k_button = Radiobutton(window, text="Km", variable=unit_var, value="Km", command=set_to_kms)
-m_button = Radiobutton(window, text="Miles", variable=unit_var, value="Miles", command=set_to_miles)
-m_button.grid(row=2, column=0)
-k_button.grid(row=2, column=2)
+km_button = Radiobutton(window, text="Km", variable=unit_var, value="Km", command=set_to_kms)
+km_button.grid(row=2, column=2)
+
+ml_button = Radiobutton(window, text="Miles", variable=unit_var, value="Miles", command=set_to_miles)
+ml_button.grid(row=3, column=2)
+
 
 # Button
 button = Button(text="Calculate", font=("Consolas", 15), command=calculate)
