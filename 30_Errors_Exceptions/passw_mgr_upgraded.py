@@ -71,25 +71,14 @@ def save():
 # ---------------------------- FIND PASS ------------------------------- #
 def find_password():
     website = web_entry.get()
-    mail = email_entry.get()
-    password = pass_entry.get()
-    new_data = {
-        website: {
-            "mail": mail,
-            "passw": password
-        }
-    }
+
     try:
         with open("data_saver.json", "r") as data_file:
             # Reading old data
             data = json.load(data_file)
     except FileNotFoundError:
         messagebox.showinfo(title="Error", message="No File found")
-        with open("data_saver.json", "w") as data_file:
-            json.dump(new_data, data_file, indent=4)
-    except KeyError:
-        with open("data_saver.json", "w") as data_file:
-            json.dump(data, data_file, indent=4)
+
     else:
         if website in data:
             email = data[website]["email"]
