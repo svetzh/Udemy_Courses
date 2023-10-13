@@ -92,8 +92,8 @@ def find_password():
             json.dump(data, data_file, indent=4)
     else:
         if website in data:
-            email = data[website]["mail"]
-            passwd = data[website]["passw"]
+            email = data[website]["email"]
+            passwd = data[website]["password"]
             messagebox.showinfo(title=website, message=f"Email: {email}\nPass: {passwd}")
         else:
             messagebox.showinfo(title="Error", message=f'No details for "{website}" exists.')
