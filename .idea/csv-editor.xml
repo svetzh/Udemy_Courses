@@ -66,6 +66,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\32_email_sender\b_day_wisher\birthdays.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
