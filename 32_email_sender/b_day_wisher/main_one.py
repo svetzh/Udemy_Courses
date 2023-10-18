@@ -17,8 +17,8 @@ if current_date in bday_dict:
 
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
-        connection.login(user="svetinfo84@gmail.com", password="kzfgyyoboafeuhgr")
+        connection.login(user="svetinfo84@gmail.com", password="auemescjlmvgepfb")
         connection.sendmail(from_addr="svetinfo84@gmail.com",
-                            to_addrs=["svet_zh84@yahoo.com", "svetin2023@outlook.com"],
+                            to_addrs="svetin2023@outlook.com",
                             msg=f"Subject: Happy B-DAY!\n\n{contents}")
 

@@ -26,7 +26,7 @@
 #         msg=msg)
 
 ## outlook_passwd = "csndfbmuakzqjrnc"
-## gmail_passwd = "kzfgyyoboafeuhgr"
+## gmail_passwd = "auemescjlmvgepfb"
 ## yahoo_passwd = "qomjrnfmeoemoooe"
 
 
@@ -54,32 +54,24 @@
 import datetime as dt
 import random
 import smtplib
+import requests
+
 
 today = dt.datetime.now().weekday()
 
 with open("quotes.txt", "r") as quotes_file:
     quotes = [l.strip() for l in quotes_file]
 
-sent_email_day = 1  # since .weekday() func returns numbers 0 as Monday and 6 - Sunday, we need to set our current day
+sent_email_day = 0  # since .weekday() func returns numbers 0 as Monday and 6 - Sunday, we need to set our current day
 rand_quote = random.choice(quotes)
 
 if today == sent_email_day:
-    with smtplib.SMTP("smtp.gmail.com") as connection:
+    with smtplib.SMTP("smtp.office365.com") as connection:
         connection.starttls()
-        connection.login(user="svetinfo84@gmail.com", password="kzfgyyoboafeuhgr")
-        connection.sendmail(from_addr="svetinfo84@gmail.com",
-                            to_addrs=["svet_zh84@yahoo.com", "svetin2023@outlook.com"],
-                            msg=f'''Subject: RAND QUOTES\n
-Hello,
-    
-{rand_quote}
-
-Yours
-Svetlio
-    ''')
-
-
-
+        connection.login(user="svetin2023@outlook.com", password="csndfbmuakzqjrnc")
+        connection.sendmail(from_addr="svetin2023@outlook.com",
+                            to_addrs=["svetinfo84@gmail.com", "tsonova.neli@gmail.com"],
+                            msg=f'''Subject: RAND QUOTES\nHello,\n\n{rand_quote}\n\nYours\nSvetlio''')
 
 
 
