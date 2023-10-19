@@ -11,11 +11,11 @@ MY_LONG = 25.394461  # longitude
 # Madrid_lat = 40.416775
 # Madrid_lon = -3.703790  # PLACE WHERE was raining in the day I tested it - below id: 500 means RAIN
 
-api_key = "OWM_API_KEY"
+api_key = "OWM_API_KEY"  # replaced with environmental variables using power_shell or bash
 OWM_Endpoint = f"https://api.openweathermap.org/data/2.8/onecall"
 
 account_sid = "ACee3ed3f3c6abfba811307def53f778ce"
-auth_token = "AUTH_TOKEN"
+auth_token = "AUTH_TOKEN"  # replaced with environmental variables using power_shell or bash
 
 # phone_numbers = ["+359898784412", "+359886708160"] -> needs subscription for twillio
 
