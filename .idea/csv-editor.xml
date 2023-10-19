@@ -66,13 +66,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\34_cloud_code\birthdays.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
       </map>
     </option>
   </component>

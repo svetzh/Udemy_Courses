@@ -3,7 +3,7 @@ import smtplib
 import random
 
 # Define the time at which you want to send the email (e.g., 14:00)
-desired_time = "15:16"
+desired_time = "14:00"
 
 # Function to send the email
 def send_email():
