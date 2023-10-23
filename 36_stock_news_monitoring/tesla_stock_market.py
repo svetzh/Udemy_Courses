@@ -19,8 +19,8 @@ stock_params = {
     "apikey": STOCK_API_KEY,
 }
 
-TW_SID = "AC664ea5dcc632c70f0bf02130dc254285"
-TW_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOK")
+TW_SID = "ACee3ed3f3c6abfba811307def53f778ce"
+TW_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN")
 
 stock_response = requests.get(STOCK_ENDPOINT, params=stock_params)
 stock_response.raise_for_status()
@@ -47,9 +47,9 @@ if stock_response.status_code == 200:
         up_down = "🔻"
 
     percentage_difference = (diff / dbycp) * 100
-    percentage_difference = round(percentage_difference)
+    percentage_difference = abs(round(percentage_difference))
 
-    if abs(percentage_difference) > 5:
+    if percentage_difference > 3:
         news_param = {
             "apiKey": NEWS_API_KEY,
             "qInTitle": COMPANY_NAME,  # most of time articles are using company names instead of company stock names
@@ -68,7 +68,7 @@ if stock_response.status_code == 200:
             for article in formatted_articles:
                 message = client.messages.create(
                     body=article,
-                    from_="+12295305639",
+                    from_="+18302665362",
                     to="+35989_878_4412"
                 )
 
