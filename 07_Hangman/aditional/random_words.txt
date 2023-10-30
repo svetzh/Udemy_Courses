@@ -1,0 +1,8 @@
+Apple, Bicycle, Candle, Dinosaur, Elephant, Frog, Guitar, Helicopter, Igloo, Jellyfish, Kangaroo, Lighthouse, Mushroom,
+Narwhal, Octopus, Pancake, Quokka, Rainbow, Snail, Tiger, Umbrella, Violin, Watermelon, Xylophone, Yak, Zebra, Anchor,
+Banana, Carrot, Dolphin, Eiffel, Flower, Grapes, Hamburger, Icicle, Jackal, Koala, Lemon, Moon, Notebook, Orange,
+Penguin, Quilt, Robot, Sunflower, Tree, Unicorn, Volcano, Waffle, X-ray, Yeti, Zucchini, Avocado, Bear, Cat, Dog,
+Elephant, Fox, Gorilla, Hippo, Iguana, Jellybean, Koala, Lemur, Meerkat, Narwhal, Orangutan,
+Panda, Quokka, Raccoon, Seahorse, Tortoise, Unicorn, Vulture, Walrus, Xenophobe, Yak, Zebra, Alligator, Bison, Cheetah,
+Dolphin, Elephant, Flamingo, Gazelle, Heron, Ibis, Jaguar, Kangaroo, Lemur, Mongoose, Narwhal, Ocelot, Panda, Quokka,
+Rhinocerosy, Sloth, Tiger, Under, Vulture, Wallaby, Xerox, Yak, Zebra
